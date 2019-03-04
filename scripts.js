@@ -16,11 +16,11 @@ function setStickyPosition(block) {
 
 
     if (parentTop + parentHeight - stickyHeight <= 0) {
-        console.log('bottom');
+        block.className = 'toBottom';
     } else if (parentTop <= 0) {
-        console.log('sticky');
+        block.className = 'toTop';
     } else {
-        console.log('top');
+        block.className = '';
     }
 
 }
