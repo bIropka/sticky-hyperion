@@ -14,7 +14,6 @@ function setStickyPosition(block) {
         parentHeight = parent.offsetHeight,
         stickyHeight = block.offsetHeight;
 
-
     if (parentTop + parentHeight - stickyHeight <= 0) {
         block.className = 'toBottom';
     } else if (parentTop <= 0) {
@@ -24,7 +23,3 @@ function setStickyPosition(block) {
     }
 
 }
-
-/*function setStickyPosition() {
-
-}*/
