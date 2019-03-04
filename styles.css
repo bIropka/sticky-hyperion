@@ -82,7 +82,7 @@ p {
     margin: 20px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
     .wrapper-inner {
         display: flex;
@@ -97,6 +97,26 @@ p {
         width: 300px;
         flex-shrink: 0;
         order: 2;
+    }
+
+    #sticky-block {
+        width: 260px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    #sticky-block.toTop {
+        position: fixed;
+        left: auto;
+        right: auto;
+    }
+
+    #sticky-block.toBottom {
+        position: absolute;
+        left: 20px;
+        top: auto;
+        bottom: 20px;
     }
 
 }

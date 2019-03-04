@@ -1,7 +1,7 @@
 var sticky = document.getElementById('sticky-block');
 
 document.addEventListener('scroll', function () {
-    if(window.innerWidth >= 768) {
+    if(window.innerWidth >= 1200) {
         setStickyPosition(sticky);
     }
 });
