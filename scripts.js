@@ -12,9 +12,10 @@ function setStickyPosition(block) {
     var parent = block.parentNode,
         parentTop = parent.getBoundingClientRect().top,
         parentHeight = parent.offsetHeight,
-        stickyHeight = block.offsetHeight;
+        stickyHeight = block.offsetHeight,
+        parentPaddings = parseInt(getComputedStyle(parent).paddingTop) + parseInt(getComputedStyle(parent).paddingBottom);
 
-    if (parentTop + parentHeight - stickyHeight <= 0) {
+    if (parentTop + parentHeight - stickyHeight - parentPaddings <= 0) {
         block.className = 'toBottom';
     } else if (parentTop <= 0) {
         block.className = 'toTop';
